@@ -21,9 +21,6 @@ while invalid_attempts > 0:
             # Computer chooses randomly any number among 1 , 2 and 3. Using randint method  
             computer_value = random.randint(1,3)
             print("Computer chooses:", computer_value)
-            # Makes sure the number chosen is between 1 and 3
-            while user_input > 3 or user_input <1:
-                  user_input = int(input('Enter a valid choice please'))
             # 1, 2, 3 number only
             if user_input != computer_value:
             # calculate the computer's value  (the last number 1 shows how many turns)
@@ -34,7 +31,7 @@ while invalid_attempts > 0:
             else:
                 print("It is a draw!")
         else:     
-            print("Please enter a single digit")
+            print("Enter a valid choice please")
             invalid_attempts = invalid_attempts - 1
             print("You have", invalid_attempts,"attempts")
     else:         
