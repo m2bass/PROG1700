@@ -3,9 +3,9 @@ Author: Abass- Tijani Modupe Aminat
 Student ID: W0492257
 Course: PROG1700
 Programming Language: Python 3
-Date: Oct 12, 2023'''
-
-# import modules here
+Date: Oct 12, 2023
+'''
+# import module
 import random
 # Prints the rules of the game. Performs string concatenation
 print('Winning rules of the game ROCK PAPER SCISSORS are :\n'
