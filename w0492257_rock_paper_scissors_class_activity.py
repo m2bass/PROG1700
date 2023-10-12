@@ -10,7 +10,7 @@ print('Winning rules of the game ROCK PAPER SCISSORS are :\n'
 
 #Global variable
 invalid_attempts = 3
-#it will continuously loop while the codition is true
+#it will continuously loop while the condition is true
 while invalid_attempts > 0:
     # Local variable user_input
     user_input = input("Press 1 for Rock, 2 for paper, 3 for scissors:")
@@ -20,8 +20,12 @@ while invalid_attempts > 0:
         if len(user_input) == 1:
             # cast to an integer
             user_input = int(user_input)
+            # Computer chooses randomly any number among 1 , 2 and 3. Using randint method  
             computer_value = random.randint(1,3)
-            print(computer_value)
+            print("Computer chooses:", computer_value)
+            # Makes sure the number chosen is between 1 and 3
+            while user_input > 3 or user_input <1:
+                  user_input = int(input('Enter a valid choice please'))
             # 1, 2, 3 number only
             if user_input != computer_value:
             # calculate the computer's value  (the last number 1 shows how many turns)
@@ -30,7 +34,7 @@ while invalid_attempts > 0:
                 else:
                     print("Computer Wins!")     
             else:
-                print("Tie  Game")
+                print("It is a draw!")
         else:     
             print("Please enter a single digit")
             invalid_attempts = invalid_attempts - 1
@@ -38,6 +42,5 @@ while invalid_attempts > 0:
     else:         
         print("Invalid Input")     
 else:
-    print("You do not have any attempts left!")
-# main
+    print("Thanks for playing!")
 
