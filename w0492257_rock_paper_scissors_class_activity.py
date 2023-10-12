@@ -1,5 +1,3 @@
-# commennts
-
 # import modules here
 import random
 # Prints the rules of the game. Performs string concatenation
