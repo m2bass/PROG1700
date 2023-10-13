@@ -22,8 +22,8 @@ while invalid_attempts > 0:
     # validate the input to ensure the program does not have invalid input
     # return true if a digit is entered otherwise return false
     if user_input.isdigit():
-        # Ensures user input is not greater than 3  
-        if int(user_input) < 4:
+        # Ensures user input is not equal to zero and not greater than 3 
+        if 0 < int(user_input) < 4:
             # cast to an integer
             user_input = int(user_input)
             # Computer chooses randomly any number among 1 , 2 and 3. Using randint method  
