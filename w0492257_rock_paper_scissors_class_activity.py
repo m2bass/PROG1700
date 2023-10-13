@@ -2,6 +2,7 @@
 Author: Abass- Tijani Modupe Aminat
 Student ID: W0492257
 Course: PROG1700
+Project: Rock, Paper and Scissors Class Activity
 Programming Language: Python 3
 Date: Oct 12, 2023
 '''
