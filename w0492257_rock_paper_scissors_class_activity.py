@@ -13,9 +13,9 @@ print('Winning rules of the game ROCK PAPER SCISSORS are :\n'
       + "Rock vs Scissors -> Rock wins \n"
       + "Paper vs Scissors -> Scissor wins \n")
 
-#Global variable
+# Global variable
 invalid_attempts = 3
-#it will continuously loop while the condition is true
+# it will continuously loop while the condition is true
 while invalid_attempts > 0:
     # Local variable user_input
     user_input = input("Press 1 for Rock, 2 for paper, 3 for scissors:")
