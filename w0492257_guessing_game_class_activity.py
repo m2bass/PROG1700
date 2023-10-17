@@ -57,7 +57,7 @@ def play_game():
         result = check_guess(guess, secret_number)
 
         if result == "Correct":
-            print(f"Congratulations! You guessed the secret number {secret_number} in {attempts} attempts.")
+            print(f"Congratulations! You guessed the number {secret_number} in {attempts} tries!")
             won = True
             break
         else:
