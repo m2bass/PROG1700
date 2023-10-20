@@ -31,7 +31,7 @@ def get_guess(attempts):
                 print("Invalid input. Please enter a number within the specified range.")
         except ValueError:
             print("Invalid input. Please enter a valid number.")
-        # Exits the game after 5 invalid inputs.
+        # Exits the game after 3 invalid inputs.
         attempts += 1
         if attempts > 3:
             print("Too many incorrect attempts. Exiting the game.")
